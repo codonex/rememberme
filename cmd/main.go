@@ -3,15 +3,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/codonex/rememberme"
+	"github.com/codonex/rememberme/v1"
 )
 
 func main() {
-	f := rememberme.RememberMe()
-	result, _ := f("Ahmet")
+	f := rememberme.RememberYou()
+	result := f("Ahmet")
 	fmt.Println(result)
-	result1, _ := f("Ahmet")
+	result1 := f("Ahmet")
 	fmt.Println(result1)
-	result2, _ := f("Yusuf")
+	result2 := f("Yusuf")
 	fmt.Println(result2)
 }
